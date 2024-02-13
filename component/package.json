@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
+		"build": "vite build && svelte-package",
 		"postbuild": "vite -c vite.wc.config.js build",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
