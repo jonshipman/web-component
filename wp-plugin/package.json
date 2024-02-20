@@ -1,0 +1,33 @@
+{
+	"name": "wp-plugin",
+	"version": "0.0.0",
+	"description": "A Demo/Boilerplate for building web-components using Svelte for WordPress.",
+	"private": true,
+	"main": "web-component.php",
+	"scripts": {
+		"postinstall": "composer install",
+		"build": "concurrently \"npm run build:*\"",
+		"build:demo": "wp-scripts build ./lib/demo/js/web-component-demo.js --output-path=./assets/js",
+		"bundle:win": "CMD.EXE /C .\\bundle.cmd",
+		"bundle:nix": "sh ./bundle.sh"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jonshipman/web-component.git"
+	},
+	"author": "Jon Shipman <jon@shaemarcus.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jonshipman/web-component/issues"
+	},
+	"homepage": "https://github.com/jonshipman/web-component#readme",
+	"devDependencies": {
+		"@you/web-component-demo": "0.0.0",
+		"@wordpress/babel-preset-default": "^7.34.0",
+		"@wordpress/prettier-config": "^3.5.0",
+		"@wordpress/scripts": "^27.1.0",
+		"concurrently": "^8.2.2",
+		"prettier": "^3.1.1"
+	},
+	"prettier": "@wordpress/prettier-config"
+}

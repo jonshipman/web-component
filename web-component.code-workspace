@@ -1,0 +1,13 @@
+{
+	"folders": [{ "path": "web-component" }, { "path": "wp-plugin" }, { "path": "." }],
+	"settings": {
+		"files.exclude": {
+			"web-component": true,
+			"wp-plugin": true
+		},
+		"[php]": {
+			"editor.defaultFormatter": "wongjn.php-sniffer"
+		},
+		"prettier.configPath": "./.prettierrc"
+	}
+}

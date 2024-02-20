@@ -1,0 +1,33 @@
+{
+	"name": "you/web-component",
+	"type": "wordpress-plugin",
+	"license": "GPL-3.0-or-later",
+	"description": "A Demo/Boilerplate for building web-components using Svelte for WordPress.",
+	"homepage": "https://github.com/jonshipman/web-component",
+	"config": {
+		"platform": {
+			"php": "8.1"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"authors": [
+		{
+			"name": "Jon Shipman",
+			"email": "jon@shaemarcus.com",
+			"homepage": "https://www.shaemarcus.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/jonshipman/web-component/issues"
+	},
+	"require-dev": {
+		"php": "^8.1",
+		"squizlabs/php_codesniffer": "^3.8",
+		"phpcompatibility/php-compatibility": "^9.3.0",
+		"phpcompatibility/phpcompatibility-wp": "^2.1.0",
+		"wp-coding-standards/wpcs": "^3.0",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0.0"
+	}
+}

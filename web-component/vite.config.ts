@@ -1,16 +1,15 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig({
+	resolve: { alias: { $lib: '/src' } },
 	build: {
 		lib: {
-			entry: resolve(__dirname, 'dist/index.js'),
-			name: 'MyComponent',
-			fileName: 'my-component',
+			entry: 'src/main.ts',
+			name: 'WebComponentDemo',
+			fileName: 'web-component-demo',
 			formats: ['iife']
-		},
-		outDir: 'dist-js'
+		}
 	},
 	plugins: [svelte()]
 });

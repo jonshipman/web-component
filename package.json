@@ -1,18 +1,20 @@
 {
-	"name": "monorepo",
-	"version": "1.0.0",
+	"name": "web-component-monorepo",
+	"version": "0.0.0",
 	"description": "",
 	"private": true,
-	"main": ".",
-	"type": "module",
 	"workspaces": [
-		"component"
+		"web-component",
+		"wp-plugin"
 	],
 	"scripts": {
-		"dev": "npm -w=component run dev",
-		"build": "npm -w=component run build"
+		"dev": "npm run dev -w=web-component",
+		"build": "npm -ws run build",
+		"bundle:win": "npm run bundle:win -w=wp-plugin",
+		"bundle:nix": "npm run bundle:nix -w=wp-plugin"
 	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"type": "module"
 }
